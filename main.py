@@ -210,7 +210,7 @@ if st.session_state.step >= 3 and "A" in st.session_state:
         "픽셀 값이 255를 초과하면 255로 고정(clip)합니다."
     )
 
-    k = st.slider("k 값", min_value=0.0, max_value=100.0, value=1.0, step=0.1, key="k_slider")
+    k = st.slider("k 값", min_value=0.0, max_value=3.0, value=1.0, step=0.1, key="k_slider")
 
     A = st.session_state.A
     kA = np.clip(k * A, 0, 255)
