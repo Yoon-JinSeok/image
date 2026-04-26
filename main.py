@@ -142,6 +142,13 @@ if st.sidebar.button("🔄 처음부터 다시 시작"):
 # ---------------- 본문 ----------------
 st.title("🎨 이미지 데이터의 변환")
 st.caption("컬러 이미지를 30×30으로 축소하여 채널 분리 → 흑백 변환 → 실수배 → 두 이미지의 선형 결합 순서로 진행합니다.")
+st.markdown("""
+<div style='display: flex; justify-content: space-between; align-items: center;'>
+  <h1 style='margin-bottom: 0;'>"🎨 이미지 데이터의 변환 앱</h1>
+  <span style='font-size: 16px; color: gray;'>created by 윤진석</span>
+</div>
+""", unsafe_allow_html=True)
+
 
 # ============ 1단계 ============
 st.header("1단계 · 컬러 이미지 RGB 채널 출력")
